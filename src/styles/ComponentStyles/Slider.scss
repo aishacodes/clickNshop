@@ -1,0 +1,79 @@
+.SmBookCarousel {
+  margin-bottom: 49px;
+}
+.LgBookCarousel {
+  margin-bottom: 1rem;
+}
+
+.MdBookCarousel {
+  margin-bottom: 65px;
+}
+
+.slide {
+  position: relative;
+  background-color: #edf6ff;
+  align-items: stretch;
+  padding: 0.75rem;
+}
+
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1rem;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 60;
+  width: 40px;
+
+  transform: rotate(180deg);
+}
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -1rem;
+  width: 40px;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 60;
+}
+
+@media only screen and (min-width: 1024px) {
+  .SmBookCarousel {
+    display: none;
+  }
+
+  .MdBookCarousel {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1007px) {
+  .SmBookCarousel {
+    display: none;
+  }
+  .LgBookCarousel {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .LgBookCarousel {
+    display: none;
+  }
+
+  .MdBookCarousel {
+    display: none;
+  }
+
+  .slide {
+    height: 210px;
+  }
+}

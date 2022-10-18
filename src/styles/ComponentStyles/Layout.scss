@@ -1,0 +1,12 @@
+.Layout {
+  @apply bg-[#F5F5F5] h-screen w-screen overflow-hidden flex flex-col;
+  .sell {
+    @apply px-[10.625rem] py-[9px] flex items-center justify-between;
+  }
+}
+.black-friday {
+  @apply h-16 w-full bg-black flex items-center justify-center;
+  .line {
+    @apply bg-[#FF5757] h-full w-[10px] mx-[5.9rem];
+  }
+}

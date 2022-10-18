@@ -1,0 +1,11 @@
+.amazing-hero {
+  @apply h-[23rem] w-full;
+  background-image: url("/images/amazing-bg.jpeg");
+  background-repeat: no-repeat;
+}
+.cat-deals {
+  @apply flex gap-4 justify-between;
+  img {
+    border-radius: 18.83px;
+  }
+}

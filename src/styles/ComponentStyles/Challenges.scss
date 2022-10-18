@@ -1,0 +1,14 @@
+.challenges {
+  @apply h-[17.625rem] w-full bg-white mb-4;
+  box-shadow: 0px 3.76548px 3.76548px rgba(0, 0, 0, 0.25);
+  border-radius: 4.70685px;
+
+  header {
+    @apply py-[1.1875rem] flex justify-center gap-[1.875rem] items-center;
+    box-shadow: 0px 3.76548px 3.76548px rgba(0, 0, 0, 0.25);
+    border-radius: 4.70685px;
+    h2 {
+      @apply text-[1.875rem] font-bold;
+    }
+  }
+}

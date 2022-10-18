@@ -1,0 +1,9 @@
+.Cart {
+  @apply bg-white py-[1.875rem] px-[3.0625rem] my-[1.875rem] mx-[10.625rem];
+  h1 {
+    @apply font-bold text-2xl;
+  }
+  header {
+    @apply flex items-center;
+  }
+}

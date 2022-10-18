@@ -1,0 +1,24 @@
+.ProductCard {
+  @apply min-h-[15.7rem] w-full bg-white;
+
+  .image-con {
+    @apply h-[12.45rem] w-full relative;
+    img {
+      @apply w-full h-full object-cover;
+    }
+    .store-tag {
+      @apply h-7 w-11 flex items-center justify-center text-xs text-white absolute top-0 left-0 z-10;
+      background-image: url("/vectors/store-tag.svg");
+      background-size: 100% 100%;
+    }
+  }
+  h2 {
+    @apply text-[0.69rem] mx-1;
+  }
+  h3 {
+    @apply text-[0.69rem] mx-1;
+  }
+  p {
+    @apply text-gray2 opacity-50 text-[0.5625rem] mx-1 py-1;
+  }
+}
