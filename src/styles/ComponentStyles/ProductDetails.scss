@@ -1,0 +1,26 @@
+.ProuctDetails {
+  //   @apply bg-white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+
+  border-radius: 5px;
+  header {
+    @apply flex items-center gap-1;
+    p {
+      @apply bg-white w-56 flex items-center justify-center h-[3.125rem] cursor-pointer;
+      border: 1px solid #dadada;
+
+      &.active {
+        @apply text-primary;
+        border-bottom: none;
+      }
+    }
+  }
+
+  .details {
+    @apply px-6 bg-white pb-8 mb-10 text-gray1;
+    border: 1px solid #f1f1f1;
+    p {
+      @apply my-4;
+    }
+  }
+}

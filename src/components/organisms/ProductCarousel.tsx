@@ -8,13 +8,15 @@ import { IProductType } from "../../utils";
 interface IProps {
   device?: "mobile" | "laptop" | "tablet";
   products: IProductType[];
+  slides?: number;
 }
 
-const ProductCarousel = ({ device, products }: IProps) => {
+const ProductCarousel = ({ device, products, slides }: IProps) => {
   var settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: device == "mobile" ? 1.5 : device === "tablet" ? 2.5 : 4,
+    slidesToShow:
+      device == "mobile" ? 1.5 : device === "tablet" ? 2.5 : slides || 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,

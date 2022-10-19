@@ -1,0 +1,14 @@
+.FlashSales {
+  @apply px-2 bg-white mt-10;
+  header {
+    @apply h-[3.5rem] px-8 text-white flex justify-between items-center;
+    background: linear-gradient(180deg, #ed1c24 0%, #cb040c 100%);
+    border-radius: 4.70685px 4.70685px 0px 0px;
+  }
+  .sales {
+    // @apply w-full;
+    .slide {
+      background-color: white;
+    }
+  }
+}

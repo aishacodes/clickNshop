@@ -1,7 +1,7 @@
 import React from "react";
 
 const SponsoredProduct = () => {
-  return <div>SponsoredProduct</div>;
+  return <div className="bg-white">SponsoredProduct</div>;
 };
 
 export default SponsoredProduct;

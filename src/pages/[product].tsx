@@ -5,6 +5,8 @@ import { useDispatch } from "react-redux";
 import Button from "../components/atoms/Button";
 import StarRating from "../components/atoms/vectors/StarRating";
 import BuyNow from "../components/organisms/BuyNow";
+import ProuctDetails from "../components/organisms/ProuctDetails";
+import SponsoredProduct from "../components/organisms/SponsoredProduct";
 import Layout from "../components/templates/Layout";
 import { productsyoulike } from "../data/productsyoulike";
 import { buyProduct } from "../store/cartReducer";
@@ -105,6 +107,14 @@ const Product = () => {
         </div>
         <div className="grid grid-cols-[1fr_20rem] gap-4">
           <BuyNow />
+        </div>
+        <div className="grid grid-cols-[1fr_20rem] gap-4">
+          <section>
+            <ProuctDetails />
+          </section>
+          <section className="pt-12">
+            <SponsoredProduct />
+          </section>
         </div>
       </main>
     </Layout>
