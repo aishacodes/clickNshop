@@ -50,3 +50,48 @@ export const categories = [
     name: "Computing",
   },
 ];
+
+export const recommended = [
+  {
+    name: "Water proof Laptop bag pack",
+    img: "/images/rec1.png",
+    price: 100000,
+    discount: "33",
+    discountedprice: 600,
+  },
+  {
+    name: "Water proof Laptop bag pack",
+    img: "/images/rec2.png",
+    price: 100000,
+    discount: "33",
+    discountedprice: 600,
+  },
+  {
+    name: "Water proof Laptop bag pack",
+    img: "/images/rec3.png",
+    price: 100000,
+    discount: "33",
+    discountedprice: 600,
+  },
+  {
+    name: "Water proof Laptop bag pack",
+    img: "/images/rec1.png",
+    price: 100000,
+    discount: "33",
+    discountedprice: 600,
+  },
+  {
+    name: "Water proof Laptop bag pack",
+    img: "/images/rec3.png",
+    price: 100000,
+    discount: "33",
+    discountedprice: 600,
+  },
+  {
+    name: "Water proof Laptop bag pack",
+    img: "/images/rec1.png",
+    price: 100000,
+    discount: "33",
+    discountedprice: 600,
+  },
+];

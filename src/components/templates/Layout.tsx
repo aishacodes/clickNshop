@@ -7,11 +7,11 @@ const Layout = ({ children }: { children: ReactElement }) => {
   return (
     <main className="Layout">
       <header className="black-friday">
-        <div className="line"></div>
+        <div className="line" />
         <Image src="/images/calendar.png" width={58} height={58} />
         <Image src="/images/black-friday.png" width={548} height={58} />
         <Image src="/images/calendar.png" width={58} height={58} />
-        <div className="line"></div>
+        <div className="line" />
       </header>
       <div className="sell">
         <div className="flex items-center gap-[5px]">

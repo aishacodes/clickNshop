@@ -5,3 +5,7 @@ export interface IProductType {
   img: string;
   name: string;
 }
+
+export const trauncateText=(w:string)=>{
+    return()
+}

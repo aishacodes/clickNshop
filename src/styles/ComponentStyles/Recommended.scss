@@ -1,0 +1,7 @@
+.Recommended {
+  @apply mx-[10.625rem] bg-white p-4 mb-8 font-bold text-xl;
+  border-radius: 5px;
+  .products {
+    @apply flex items-center flex-wrap gap-4 mt-5;
+  }
+}

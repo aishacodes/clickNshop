@@ -7,3 +7,7 @@
     @apply flex items-center;
   }
 }
+.cont-shop {
+  @apply bg-white h-[4.5rem] mb-[1.875rem] flex justify-end gap-6 items-center px-52;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
