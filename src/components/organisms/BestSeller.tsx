@@ -7,6 +7,7 @@ const BestSeller = () => {
       {bestseller.map((seller, index) => (
         <div key={index} className="seller-card">
           <img src={seller.img} alt="" />
+          <img src={seller.logo} alt="" />
         </div>
       ))}
     </div>

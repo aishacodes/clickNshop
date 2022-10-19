@@ -5,7 +5,7 @@ import Star from "../atoms/vectors/Star";
 
 const SellWoo = ({ homeSell }: { homeSell: Boolean }) => {
   return (
-    <div className=" flex items-center justify-between  w-[100%] mx-auto">
+    <div className=" flex items-center justify-between  w-full mx-auto">
       {homeSell ? (
         <RedStar />
       ) : (

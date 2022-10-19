@@ -1,7 +1,8 @@
 .amazing-hero {
-  @apply h-[23rem] w-full pt-[2.1875rem] pl-[2.8125rem];
-  background-image: url("/images/amazing-bg.jpeg");
+  @apply h-[22rem] mb-4 w-full pt-[2.1875rem] pl-[2.8125rem];
+  background-image: url("/images/hero-design.png");
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .cat-deals {
   @apply flex gap-4 justify-between;

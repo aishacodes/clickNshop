@@ -5,5 +5,14 @@
   @apply grid grid-cols-2 gap-6 py-10;
 }
 .category {
-  @apply grid grid-cols-[20rem_1fr_15.4rem];
+  @apply grid grid-cols-[20rem_1fr_15.4rem] gap-4;
+}
+
+.tag {
+  @apply absolute left-0 top-[40rem];
+}
+
+.left-tag {
+  @apply absolute -right-32 top-[40rem];
+  transform: rotate(180deg);
 }

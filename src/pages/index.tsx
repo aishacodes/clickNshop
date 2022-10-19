@@ -14,7 +14,7 @@ const BestDeals = dynamic(() => import("../components/organisms/BestDeals"));
 
 const Home: NextPage = () => {
   return (
-    <main>
+    <main className="relative">
       <HomeNav />
       <div className="wrapper ">
         <section className="category">
@@ -29,6 +29,14 @@ const Home: NextPage = () => {
         </section>
         <Challenges />
         <FlashSales />
+      </div>
+      <div className="tag">
+        <img src="/images/bag.png" alt="" />
+        <img src="/vectors/click.svg" alt="" />
+      </div>
+      <div className="left-tag">
+        <img src="/images/bag.png" alt="" />
+        <img src="/vectors/click.svg" alt="" />
       </div>
     </main>
   );

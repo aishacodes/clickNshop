@@ -26,7 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 60;
+  z-index: 50;
   width: 40px;
 
   transform: rotate(180deg);
@@ -42,7 +42,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 60;
+  z-index: 50;
 }
 
 @media only screen and (min-width: 1024px) {

@@ -1,31 +1,31 @@
 export const bestseller = [
   {
     img: "/images/best1.png",
-    name: "",
+    logo: "/vectors/movielogo.svg",
   },
   {
     img: "/images/best2.png",
-    name: "",
+    logo: "/vectors/billlogo.svg",
   },
   {
     img: "/images/best3.jpeg",
-    name: "",
+    logo: "/vectors/sociallogo.svg",
   },
   {
     img: "/images/best4.jpeg",
-    name: "",
+    logo: "/vectors/eat.svg",
   },
   {
     img: "/images/best5.png",
-    name: "",
+    logo: "/images/go.png",
   },
   {
     img: "/images/best6.jpeg",
-    name: "",
+    logo: "/vectors/dispatchlogo.svg",
   },
   {
     img: "/images/best7.jpeg",
-    name: "",
+    logo: "/vectors/moneylogo.svg",
   },
 ];
 export const categories = [

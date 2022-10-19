@@ -1,54 +1,57 @@
 import Image from "next/image";
 import React from "react";
+import Computer from "../atoms/vectors/Computer";
+import PhoneIcon from "../atoms/vectors/PhoneIcon";
+import Plug from "./Plug";
 
 const CategoryNAv = () => {
   const categories = [
     {
-      icon: "",
+      icon: PhoneIcon,
       title: "Phones & Tablets",
     },
     {
-      icon: "",
+      icon: Computer,
       title: "Computing",
     },
     {
-      icon: "",
+      icon: Plug,
       title: "Electronics",
     },
     {
-      icon: "",
+      icon: PhoneIcon,
       title: "Home & Office",
     },
     {
-      icon: "",
+      icon: PhoneIcon,
       title: "Fashion",
     },
     {
-      icon: "",
+      icon: PhoneIcon,
       title: "Health & Beauty",
     },
     {
-      icon: "",
+      icon: PhoneIcon,
       title: "Games",
     },
     {
-      icon: "",
+      icon: PhoneIcon,
       title: "Groceries",
     },
     {
-      icon: "",
+      icon: PhoneIcon,
       title: "Baby Products",
     },
     {
-      icon: "",
+      icon: PhoneIcon,
       title: "Sporting Goods",
     },
     {
-      icon: "",
+      icon: PhoneIcon,
       title: "Automobile",
     },
     {
-      icon: "",
+      icon: PhoneIcon,
       title: "Other Categories",
     },
   ];
@@ -59,9 +62,10 @@ const CategoryNAv = () => {
         <p>Categories</p>
       </div>
 
-      {categories.map((cat, catIndex) => (
+      {categories.map(({ icon: LinkIcon, title }, catIndex) => (
         <div className="link" key={catIndex}>
-          <p>{cat.title}</p>
+          <LinkIcon />
+          <p>{title}</p>
         </div>
       ))}
     </aside>

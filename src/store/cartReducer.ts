@@ -11,6 +11,12 @@ const cartReducer = createSlice({
     buyProduct(state, action) {
       return { ...state, cart: state.cart.concat(action.payload) };
     },
+    removeProduct(state, action) {
+      return {
+        ...state,
+        cart: state.cart.filter((item) => item.product.id !== action.payload),
+      };
+    },
   },
 });
 

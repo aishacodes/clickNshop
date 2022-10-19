@@ -5,26 +5,13 @@ import Logo from "../atoms/vectors/Logo";
 
 const Deal = () => {
   return (
-    <section>
-      <div className="amazing-hero">
-        <div className="flex items-center">
-          <h2 className="text-white">AMAZING PHONE DEALS</h2>
-          <div className="w-[4.1rem]">
-            <Image
-              src="/vectors/logo2.svg"
-              width={65.9}
-              height={10.51}
-              alt="image"
-            />
-          </div>
-        </div>
-        <h3>One Stop Shop</h3>
-      </div>
+    <section className="mt-6">
+      <div className="amazing-hero"></div>
       <div className="cat-deals">
         {categories.map((cat, catIndex) => (
           <div key={catIndex}>
             <Image src={cat.img} width={170} height={199} alt="image" />
-            <p>{cat.name}</p>
+            <p className="text-center text-[#354454]">{cat.name}</p>
           </div>
         ))}
       </div>
