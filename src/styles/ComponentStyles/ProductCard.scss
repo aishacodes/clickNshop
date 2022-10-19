@@ -21,4 +21,16 @@
   p {
     @apply text-gray2 opacity-50 text-[0.5625rem] mx-1 py-1;
   }
+  p.dis {
+    position: relative;
+  }
+  p.dis::after {
+    content: "";
+    height: 1px;
+    width: 2rem;
+    background-color: #ed1c24;
+    position: absolute;
+    left: 0;
+    top: 0.65rem;
+  }
 }

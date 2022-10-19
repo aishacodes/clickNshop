@@ -3,6 +3,7 @@ import { Router, useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import Button from "../components/atoms/Button";
+import Naira from "../components/atoms/vectors/Naira";
 import StarRating from "../components/atoms/vectors/StarRating";
 import BuyNow from "../components/organisms/BuyNow";
 import ProuctDetails from "../components/organisms/ProuctDetails";
@@ -58,9 +59,14 @@ const Product = () => {
                     ))}
                   <span> (4 ratings)</span>
                 </div>
-                <div className="prices">
-                  <p>124,000</p>
-                  <p>150,000</p>
+                <div className="prices mb-8">
+                  <p className="flex items-center gap-2  mt-2">
+                    <Naira /> 124,000
+                  </p>
+                  <p className="flex items-center gap-2 mt-2">
+                    <Naira />
+                    50,000
+                  </p>
                 </div>
                 <Button
                   otherClasses="uppercase"
