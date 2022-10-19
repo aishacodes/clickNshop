@@ -15,9 +15,14 @@ const NavBar = () => {
   return (
     <nav>
       <Menu />
-      <span className="logo">
-        <Image src="/images/logo2.png" width={140} height={44} />
-      </span>
+      <Link href="/">
+        <a href="">
+          <span className="logo">
+            <Image src="/images/logo2.png" width={140} height={44} />
+          </span>
+        </a>
+      </Link>
+
       <div className="flex-grow flex gap-2 mx-6">
         <SearchInput placeholder="Search products, brands and categories" />
         <Button otherClasses="max-w-max">Search</Button>

@@ -1,0 +1,9 @@
+.BuyNow {
+  @apply bg-white my-4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  .buy-item {
+    @apply flex items-center gap-5 px-4 py-6;
+    border: 1px solid #f5f5f5;
+  }
+}

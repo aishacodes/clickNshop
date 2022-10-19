@@ -5,13 +5,13 @@ import Star from "../atoms/vectors/Star";
 
 const SellWoo = ({ homeSell }: { homeSell: Boolean }) => {
   return (
-    <div className=" flex items-center justify-between ">
+    <div className=" flex items-center justify-between  w-[100%] mx-auto">
       {homeSell ? (
         <RedStar />
       ) : (
-        <div className="flex items-center gap-[5px]">
+        <div className="flex items-center gap-[0.3125rem]">
           <Star />
-          <p>Sell on woozeee</p>
+          <p className="text-primary text-xs">Sell on woozeee</p>
         </div>
       )}
       <div className="flex items-center gap-6">

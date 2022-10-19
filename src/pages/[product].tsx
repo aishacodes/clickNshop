@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import Button from "../components/atoms/Button";
 import StarRating from "../components/atoms/vectors/StarRating";
+import BuyNow from "../components/organisms/BuyNow";
 import Layout from "../components/templates/Layout";
 import { productsyoulike } from "../data/productsyoulike";
 import { buyProduct } from "../store/cartReducer";
@@ -71,7 +72,7 @@ const Product = () => {
               </article>
             )}
           </section>
-          <section>
+          <aside>
             <div className="delivery">
               <h1>Delivery and Returns</h1>
             </div>
@@ -100,7 +101,10 @@ const Product = () => {
                 alt="image"
               />
             </div>
-          </section>
+          </aside>
+        </div>
+        <div className="grid grid-cols-[1fr_20rem] gap-4">
+          <BuyNow />
         </div>
       </main>
     </Layout>

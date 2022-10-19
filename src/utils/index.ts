@@ -8,6 +8,7 @@ export interface IProductType {
   discountedprice: number;
   img: string;
   name: string;
+  supplier?: string;
 }
 export interface ICartType {
   product: IProductType;

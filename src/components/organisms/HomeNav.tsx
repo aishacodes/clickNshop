@@ -43,7 +43,7 @@ const HomeNav = () => {
           <Image src="/vectors/speaker.svg" width={30} height={18} alt="logo" />
         </div>
       </header>
-      <section className="px-[5.125rem] py-4 bg-[#F5F5F5]">
+      <section className="py-4 bg-[#F5F5F5]">
         <SellWoo homeSell />
       </section>
       <nav

@@ -64,6 +64,7 @@ export const productsyoulike: IProductType[] = [
     price: 500,
     discount: "33",
     discountedprice: 600,
+    supplier: "/images/supplier1.png",
   },
   {
     id: 19,
@@ -72,6 +73,7 @@ export const productsyoulike: IProductType[] = [
     price: 100000,
     discount: "33",
     discountedprice: 600,
+    supplier: "/images/supplier1.png",
   },
   {
     id: 20,
@@ -80,6 +82,7 @@ export const productsyoulike: IProductType[] = [
     price: 100000,
     discount: "33",
     discountedprice: 600,
+    supplier: "/images/supplier2.png",
   },
   {
     id: 21,
@@ -88,6 +91,7 @@ export const productsyoulike: IProductType[] = [
     price: 100000,
     discount: "33",
     discountedprice: 600,
+    supplier: "/images/supplier1.png",
   },
   {
     id: 22,
@@ -96,6 +100,7 @@ export const productsyoulike: IProductType[] = [
     price: 100000,
     discount: "33",
     discountedprice: 600,
+    supplier: "/images/supplier1.png",
   },
   {
     id: 23,
@@ -104,6 +109,7 @@ export const productsyoulike: IProductType[] = [
     price: 100000,
     discount: "33",
     discountedprice: 600,
+    supplier: "/images/supplier1.png",
   },
   {
     id: 24,
@@ -112,5 +118,6 @@ export const productsyoulike: IProductType[] = [
     price: 100000,
     discount: "33",
     discountedprice: 600,
+    supplier: "/images/supplier1.png",
   },
 ];

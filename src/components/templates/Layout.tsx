@@ -32,7 +32,7 @@ const Layout = ({ children }: { children: ReactElement }) => {
         <Image src="/images/calendar.png" width={58} height={58} />
         <div className="line" />
       </header>
-      <section className="mx-[10.625rem]">
+      <section className="w-[80%] mx-auto">
         <SellWoo homeSell={false} />
       </section>
       <div className={`w-full ${stickyClass}`}>
