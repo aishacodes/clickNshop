@@ -37,7 +37,7 @@ const ProductCarousel = ({ device, products }: IProps) => {
       <Slider {...settings}>
         {products.map((product, index) => (
           <div key={`carousel_index-${index}`} className="slide ">
-            <Link href="/[product]" as={`/${index}`}>
+            <Link href="/[product]" as={`/${product.id}`}>
               <a>
                 <div className="">
                   <ProductCard {...product} />

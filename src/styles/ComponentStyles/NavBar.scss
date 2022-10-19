@@ -1,4 +1,8 @@
 nav {
-  @apply bg-white py-[10px] px-[10.625rem];
+  @apply bg-white py-[10px] px-[10.625rem] flex items-center;
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.05);
+
+  .logo {
+    @apply inline-block ml-5 mr-7;
+  }
 }

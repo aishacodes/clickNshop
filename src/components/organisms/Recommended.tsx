@@ -10,7 +10,7 @@ const Recommended = () => {
       <div className="products">
         {recommended.map((product, index) => (
           <div key={`product_index-${index}`}>
-            <Link href="/[product]" as={`/${index}`}>
+            <Link href="/[product]" as={`/${product.id}`}>
               <a>
                 <div className="">
                   <ProductCard2 {...product} />

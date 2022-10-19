@@ -6,6 +6,26 @@
   header {
     @apply flex items-center;
   }
+  header {
+    &.table-header {
+      @apply grid grid-cols-[1fr_10rem_10rem_10rem] mb-2;
+      h1 {
+        @apply uppercase text-gray4 font-medium text-sm py-2;
+
+        &::not::first-child {
+          @apply flex items-center justify-center;
+        }
+      }
+    }
+  }
+  .cart-detail {
+    @apply grid grid-cols-[1fr_10rem_10rem_10rem] mb-[9px] pb-4 pt-2;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    p {
+      @apply flex items-center justify-center;
+    }
+  }
 }
 .cont-shop {
   @apply bg-white h-[4.5rem] mb-[1.875rem] flex justify-end gap-6 items-center px-52;

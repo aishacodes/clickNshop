@@ -53,20 +53,23 @@ export const categories = [
 
 export const recommended = [
   {
-    name: "Water proof Laptop bag pack",
+    id: 19,
+    name: "Samsung Galaxy A50",
     img: "/images/rec1.png",
     price: 100000,
     discount: "33",
     discountedprice: 600,
   },
   {
-    name: "Water proof Laptop bag pack",
+    id: 20,
+    name: "JBL Xtreme Portable Wir",
     img: "/images/rec2.png",
     price: 100000,
     discount: "33",
     discountedprice: 600,
   },
   {
+    id: 21,
     name: "Water proof Laptop bag pack",
     img: "/images/rec3.png",
     price: 100000,
@@ -74,6 +77,7 @@ export const recommended = [
     discountedprice: 600,
   },
   {
+    id: 22,
     name: "Water proof Laptop bag pack",
     img: "/images/rec1.png",
     price: 100000,
@@ -81,6 +85,7 @@ export const recommended = [
     discountedprice: 600,
   },
   {
+    id: 23,
     name: "Water proof Laptop bag pack",
     img: "/images/rec3.png",
     price: 100000,
@@ -88,6 +93,7 @@ export const recommended = [
     discountedprice: 600,
   },
   {
+    id: 24,
     name: "Water proof Laptop bag pack",
     img: "/images/rec1.png",
     price: 100000,

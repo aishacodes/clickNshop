@@ -1,19 +1,15 @@
 import Image from "next/image";
 import React from "react";
-type propTypes = {
-  discount: string;
-  price: number;
-  discountedprice: number;
-  img: string;
-  name: string;
-};
+import { IProductType } from "../../utils";
+
 const ProductCard = ({
+  id,
   discount,
   price,
   discountedprice,
   img,
   name,
-}: propTypes) => {
+}: IProductType) => {
   return (
     <div className="ProductCard">
       <div className="image-con">
