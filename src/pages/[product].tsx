@@ -76,6 +76,9 @@ const Product = () => {
                   <p className="flex items-center gap-1 mt-2 text-sm">
                     <Image width={13} height={13} src="/vectors/naira.svg" />
                     <p>{productData.price.toLocaleString()}</p>
+                    <p className="bg-[#FF5655] text-white p-1 text-xs flex items-center">
+                      -{productData.discount}%
+                    </p>
                   </p>
                 </div>
                 <Button
