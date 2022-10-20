@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Router, useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
+import Breadcrumbs from "../components/atoms/BreadCrumb";
 import Button from "../components/atoms/Button";
 import Naira from "../components/atoms/vectors/Naira";
 import StarRating from "../components/atoms/vectors/StarRating";
@@ -29,8 +30,10 @@ const Product = () => {
   return (
     <Layout>
       <main className="Product">
-        <div>Breadcrumb</div>
-        <div className="grid grid-cols-[1fr_20rem] gap-4">
+        <div>
+          <Breadcrumbs />
+        </div>
+        <div className="grid grid-cols-[1fr_20rem] gap-4 mt-4">
           <section className="product-details">
             {productData && (
               <div>

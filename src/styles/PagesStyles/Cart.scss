@@ -10,10 +10,9 @@
     &.table-header {
       @apply grid grid-cols-[1fr_10rem_10rem_10rem] mb-2;
       h1 {
-        @apply uppercase text-gray4 font-medium text-sm py-2;
-
-        &::not::first-child {
-          @apply flex items-center justify-center;
+        @apply uppercase text-gray4 font-medium text-sm py-2 flex justify-center;
+        &.items {
+          @apply justify-start;
         }
       }
     }
@@ -25,6 +24,9 @@
     p {
       @apply flex items-center justify-center;
     }
+  }
+  .total {
+    @apply flex justify-end;
   }
 }
 .cont-shop {

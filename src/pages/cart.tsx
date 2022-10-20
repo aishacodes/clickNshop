@@ -6,6 +6,7 @@ import Dispatch from "../components/atoms/vectors/Dispatch";
 import Recommended from "../components/organisms/Recommended";
 import Layout from "../components/templates/Layout";
 import { useAppSelector } from "../utils";
+import { totalCartAmount } from "../utils/helpers";
 
 const Cart = () => {
   const {
@@ -23,14 +24,14 @@ const Cart = () => {
             <span>items on your Cart are eligible for Free Shipping.</span>
           </header>
           <header className="table-header">
-            <h1>Items</h1>
+            <h1 className="items">Items</h1>
             <h1>quantity</h1>
             <h1>unit price</h1>
             <h1>subtotal</h1>
           </header>
-          <main>
-            {cart.length &&
-              cart.map(({ product, quantity }, productIndex) => (
+          {cart.length ? (
+            <main>
+              {cart.map(({ product, quantity }, productIndex) => (
                 <div className="cart-detail" key={productIndex}>
                   <div className="flex gap-3">
                     <Image width={60} height={60} src={product.img} />
@@ -41,7 +42,14 @@ const Cart = () => {
                   <p>{product.price * quantity}</p>
                 </div>
               ))}
-          </main>
+              <div className="total">
+                <p>Total</p>
+                <p>{totalCartAmount(cart)}</p>
+              </div>
+            </main>
+          ) : (
+            <p className="">Cart is Empty</p>
+          )}
         </div>
         <section className="cont-shop">
           <Button otherClasses="max-w-max " outlined>
