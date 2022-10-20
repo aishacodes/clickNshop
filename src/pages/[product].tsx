@@ -87,6 +87,36 @@ const Product = () => {
                 >
                   Add to Cart
                 </Button>
+                <div className="more-offer">
+                  <p>3 offers starting from ₦ 124,990 </p>
+                  <p> See More Offers</p>
+                </div>
+                <div className="also-buy">
+                  <p>you can also buy: </p>
+                  <p> Details</p>
+                </div>
+                <div className="buy-box">
+                  <div className="flex px-6 gap-3 border-b pb-6">
+                    <Image width={40} height={30} src="/images/jumia.png" />
+                    <div>
+                      <p>Jumia Protect - Device Insurance </p>
+                      <p>+ ₦ 19,650</p>
+                    </div>
+                  </div>
+                  <div className="flex  justify-between p-6 gap-3 ">
+                    <div>
+                      <p>Total Price: </p>
+                      <p>+ ₦ 19,650 </p>
+                    </div>
+                    <Button otherClasses="max-w-max text-xs uppercase">
+                      Buy both
+                    </Button>
+                  </div>
+                </div>
+                <div className="">
+                  <h4>Promotions </h4>
+                  <p> Details</p>
+                </div>
               </article>
             )}
           </section>

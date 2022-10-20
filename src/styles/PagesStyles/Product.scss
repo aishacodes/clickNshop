@@ -15,10 +15,25 @@
         border-top: 2px solid #f1f1f1;
       }
       .rating {
-        @apply flex items-center gap-[0.375rem];
+        @apply flex items-center gap-[0.375rem] mt-4;
         span {
           @apply text-primary text-xs;
         }
+      }
+      .more-offer {
+        @apply font-normal flex justify-between items-center mt-4 py-4 border-t border-b;
+        p:last-child {
+          @apply text-primary;
+        }
+      }
+      .also-buy {
+        @apply font-normal flex justify-between items-center  py-4;
+        p:last-child {
+          @apply text-primary;
+        }
+      }
+      .buy-box {
+        @apply border rounded py-4;
       }
     }
   }
