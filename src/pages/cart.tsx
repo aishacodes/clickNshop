@@ -44,7 +44,7 @@ const Cart = () => {
                       <span className="text-sm text-gray5">
                         Seller: THE 4DX
                       </span>
-                      <p>{product.name}</p>
+                      <h6>{product.name}</h6>
                       <div className="mt-4 flex items-center">
                         <Like />
                         <span className="uppercase ml-2 mr-6 text-primary">
