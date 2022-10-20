@@ -25,7 +25,7 @@ const DeliveryInfo = () => {
         <h1>Delivery and Returns</h1>
         <div>
           {delivery.map((p, i) => (
-            <div className="d-info">
+            <div className="d-info" key={i}>
               <Image
                 src={`/vectors/${p.icon}.svg`}
                 width={32}
