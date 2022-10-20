@@ -17,7 +17,10 @@ const BuyNow = () => {
           <Image src={p.supplier || ""} width={87} height={39} />
           <Image src={p.img} width={96} height={96} />
           <div className="flex-grow">
-            <p>{p.price}</p>
+            <p>
+              <Image width={15} height={15} src="/vectors/naira.svg" />
+              {p.price.toLocaleString()}
+            </p>
             <span>Samsung Galaxy A50 6.4-Inch (4GB,128GB ROM)</span>
           </div>
           <Button

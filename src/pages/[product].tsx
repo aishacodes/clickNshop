@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import { Router, useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
@@ -6,13 +7,18 @@ import Breadcrumbs from "../components/atoms/BreadCrumb";
 import Button from "../components/atoms/Button";
 import Naira from "../components/atoms/vectors/Naira";
 import StarRating from "../components/atoms/vectors/StarRating";
-import BuyNow from "../components/organisms/BuyNow";
-import ProuctDetails from "../components/organisms/ProuctDetails";
-import SponsoredProduct from "../components/organisms/SponsoredProduct";
 import Layout from "../components/templates/Layout";
 import { productsyoulike } from "../data/productsyoulike";
 import { buyProduct } from "../store/cartReducer";
 import { IProductType } from "../utils";
+
+const SponsoredProduct = dynamic(
+  () => import("../components/organisms/SponsoredProduct")
+);
+const ProuctDetails = dynamic(
+  () => import("../components/organisms/ProuctDetails")
+);
+const BuyNow = dynamic(() => import("../components/organisms/BuyNow"));
 
 const Product = () => {
   const dispatch = useDispatch();

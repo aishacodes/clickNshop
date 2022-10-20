@@ -26,7 +26,13 @@
     }
   }
   .total {
-    @apply flex justify-end;
+    @apply grid grid-cols-[1fr_10rem_10rem_10rem] mt-8 mb-2;
+    p {
+      @apply flex items-center justify-center;
+    }
+    span {
+      @apply col-span-4 flex justify-end text-xs mt-8 mr-20 text-[#868686];
+    }
   }
 }
 .cont-shop {

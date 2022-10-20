@@ -26,8 +26,14 @@ const ProductCard2 = ({
       <h2 className="text-[0.8125rem] text-gray1 mt-2">
         {truncateString(name, 18)}
       </h2>
-      <h3 className="text-[1.125rem] ">{price?.toLocaleString()}</h3>
-      <p className="text-sm  text-gray3">{discountedprice}</p>
+      <h3 className="text-[1.125rem] ">
+        <Image width={15} height={15} src="/vectors/naira.svg" />
+        {price?.toLocaleString()}
+      </h3>
+      <p className="text-sm  text-gray3 dis flex items-center">
+        <Image width={15} height={15} src="/vectors/naira-gray.svg" />
+        {discountedprice}
+      </p>
     </div>
   );
 };

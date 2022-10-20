@@ -1,12 +1,17 @@
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import React from "react";
 import { useSelector } from "react-redux";
 import Button from "../components/atoms/Button";
+import DeleteIcon from "../components/atoms/vectors/DeleteIcon";
 import Dispatch from "../components/atoms/vectors/Dispatch";
-import Recommended from "../components/organisms/Recommended";
+import Like from "../components/atoms/vectors/Like";
 import Layout from "../components/templates/Layout";
 import { useAppSelector } from "../utils";
 import { totalCartAmount } from "../utils/helpers";
+const Recommended = dynamic(
+  () => import("../components/organisms/Recommended")
+);
 
 const Cart = () => {
   const {
@@ -33,18 +38,49 @@ const Cart = () => {
             <main>
               {cart.map(({ product, quantity }, productIndex) => (
                 <div className="cart-detail" key={productIndex}>
-                  <div className="flex gap-3">
+                  <div className="flex items-start gap-3 border-r">
                     <Image width={60} height={60} src={product.img} />
-                    <p>{product.name}</p>
+                    <div>
+                      <span className="text-sm text-gray5">
+                        Seller: THE 4DX
+                      </span>
+                      <p>{product.name}</p>
+                      <div className="mt-4 flex items-center">
+                        <Like />
+                        <span className="uppercase ml-2 mr-6 text-primary">
+                          move to saved items
+                        </span>
+                        <DeleteIcon />
+                        <span className="uppercase ml-2 mr-6 text-primary">
+                          remove
+                        </span>
+                      </div>
+                    </div>
                   </div>
-                  <p>{quantity}</p>
-                  <p>{product.price}</p>
-                  <p>{product.price * quantity}</p>
+                  <p className="border-r">{quantity}</p>
+                  <p className="border-r">
+                    <Image width={15} height={15} src="/vectors/naira.svg" />
+                    {product.price.toLocaleString()}
+                  </p>
+                  <p className="text-[#043E7D]">
+                    <Image
+                      width={15}
+                      height={15}
+                      src="/vectors/naira-blue.svg"
+                    />
+                    {(product.price * quantity)?.toLocaleString()}
+                  </p>
                 </div>
               ))}
               <div className="total">
+                <p />
+                <p />
                 <p>Total</p>
-                <p>{totalCartAmount(cart)}</p>
+                <p className="text-[#043E7D]">
+                  <Image width={15} height={15} src="/vectors/naira-blue.svg" />
+                  {totalCartAmount(cart)}
+                </p>
+                <span>Delivery fee not included yet</span>
               </div>
             </main>
           ) : (
