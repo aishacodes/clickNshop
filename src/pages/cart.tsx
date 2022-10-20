@@ -60,7 +60,7 @@ const Cart = () => {
                   <p className="border-r">{quantity}</p>
                   <p className="border-r">
                     <Image width={15} height={15} src="/vectors/naira.svg" />
-                    {product.price.toLocaleString()}
+                    {product.discountedprice.toLocaleString()}
                   </p>
                   <p className="text-[#043E7D]">
                     <Image
@@ -68,7 +68,7 @@ const Cart = () => {
                       height={15}
                       src="/vectors/naira-blue.svg"
                     />
-                    {(product.price * quantity)?.toLocaleString()}
+                    {(product.discountedprice * quantity)?.toLocaleString()}
                   </p>
                 </div>
               ))}

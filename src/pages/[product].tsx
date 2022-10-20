@@ -71,11 +71,11 @@ const Product = () => {
                 <div className="prices my-8">
                   <p className="flex items-center gap-1 mt-2 border-t text-2xl font-bold pt-6">
                     <Image width={24} height={19} src="/vectors/naira.svg" />
-                    124,000
+                    <p>{productData.discountedprice.toLocaleString()}</p>
                   </p>
                   <p className="flex items-center gap-1 mt-2 text-sm">
                     <Image width={13} height={13} src="/vectors/naira.svg" />
-                    50,000
+                    <p>{productData.price.toLocaleString()}</p>
                   </p>
                 </div>
                 <Button
