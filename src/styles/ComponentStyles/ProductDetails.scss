@@ -19,8 +19,13 @@
   .details {
     @apply px-6 bg-white pb-8 mb-10 text-gray1;
     border: 1px solid #f1f1f1;
+    line-height: 23px;
     p {
       @apply my-4;
+
+      &:last-child {
+        @apply mt-16;
+      }
     }
   }
 }

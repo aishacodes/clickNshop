@@ -5,8 +5,8 @@ import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import Breadcrumbs from "../components/atoms/BreadCrumb";
 import Button from "../components/atoms/Button";
-import Naira from "../components/atoms/vectors/Naira";
 import StarRating from "../components/atoms/vectors/StarRating";
+import DeliveryInfo from "../components/organisms/DeliveryInfo";
 import Layout from "../components/templates/Layout";
 import { productsyoulike } from "../data/productsyoulike";
 import { buyProduct } from "../store/cartReducer";
@@ -91,22 +91,7 @@ const Product = () => {
             )}
           </section>
           <aside>
-            <div className="delivery">
-              <h1>Delivery and Returns</h1>
-            </div>
-            <div className="seller-info">
-              <header>
-                <h1>SELLER INFORMATION </h1>
-                <Image
-                  src="/vectors/caret-right.svg"
-                  width={15}
-                  height={15}
-                  alt="image"
-                />
-              </header>
-              <p> woozeee store</p>
-              <p>90% Seller Score</p>
-            </div>
+            <DeliveryInfo />
             <div className="list-product">
               <h1>
                 Have one to sell?

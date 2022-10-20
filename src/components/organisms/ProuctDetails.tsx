@@ -17,7 +17,7 @@ const ProuctDetails = () => {
           </p>
         ))}
       </header>
-      <div className="details">
+      <div className="details ">
         <div className="mx-auto max-w-max my-8">
           <Image width={741} height={400} src="/images/galaxy.png" />
         </div>
