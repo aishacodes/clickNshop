@@ -16,8 +16,19 @@ const FlashSales = () => {
           />
           <p>Flash Sales</p>
         </div>
-        <div className="flex items-center">
-          <p>Time Left: </p>
+        <div className="flex items-center gap-1 font-bold">
+          <p className="mr-3">Time Left: </p>
+          <span className="text-[#ED1C24] rounded-[4.7px] py-[7px] px-[5px] bg-white">
+            21h
+          </span>
+          :
+          <span className="text-[#ED1C24] rounded-[4.7px] py-[7px] px-[5px] bg-white">
+            40m
+          </span>
+          :
+          <span className="text-[#ED1C24] rounded-[4.7px] py-[7px] px-[5px] bg-white">
+            15s
+          </span>
         </div>
         <div className="flex items-center">
           <p>SEE ALL</p>
